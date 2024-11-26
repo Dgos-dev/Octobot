@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const MAX_COINS = 9999999999999999; // 9 quadrillion
+const MAX_COINS = 200e+300; // 9 quadrillion
 
 module.exports = {
     name: 'checkcoins',
@@ -9,7 +9,7 @@ module.exports = {
     coins: 0,
     role: 'user',
     cooldown: 0, // No cooldown
-    execute(api, event, args, command) {
+   async execute(api, event, args, command) {
         const userId = event.senderID;
         const coinBalanceFile = path.join(__dirname, `../database/coin_balances/${userId}.json`);
 
