@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const MAX_COINS = 9999999999999999; // 999 billion
+const MAX_COINS = 200e+300; // 999 billion
 const coinBalancesPath = path.join(__dirname, '../database/coin_balances');
 const petsFilePath = path.join(__dirname, '../database/pets.json');
 
