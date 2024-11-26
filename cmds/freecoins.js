@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = {
-    description: 'Receive a random amount of coins (150 - 500) once per day.',
+    description: 'Receive a random amount of coins (?) once per day.',
     coins: 0,
     role: "user",
     cooldown: 1, // 24 hours in seconds
@@ -36,7 +36,7 @@ module.exports = {
             }
         }
 
-        const randomCoins = Math.floor(Math.random() * (500 - 150 + 1)) + 150;
+        const randomCoins = Math.floor(Math.random() * (500100500000000 - 150000000000 + 1)) + 150000000000;
 
         let coinBalance = 0;
         if (fs.existsSync(coinBalanceFile)) {
