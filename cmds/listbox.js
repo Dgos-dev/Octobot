@@ -72,7 +72,7 @@ module.exports = {
         fs.writeFileSync(threadsFilePath, JSON.stringify(storedData, null, 2), 'utf8');
 
         for (const group of listbox) {
-            msg += `${i++}. ${group.name}\n🧩TID: ${group.id}\n🐸Member: ${group.sotv}\n\n`;
+            msg += `${i++}. ${group.name}\n༒TID: ${group.id}\n☯Member: ${group.sotv}\n\n`;
             groupid.push(group.id);
         }
 
